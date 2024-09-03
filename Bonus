@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ini Tugas ? </title>
+	<style>
+		.large-text {
+			font-size: 30px;
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		.fade-in-slow {
+			animation: fadeIn 3s;
+		}
+		.fade-in-very-slow {
+			animation: fadeIn 3s;
+		}
+		@keyframes fadeOut {
+			from { opacity: 1; }
+			to { opacity: 0; }
+		}
+		.fade-out-slow {
+			animation: fadeOut 8s;
+		}
+        
+        img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+            width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center"> Ke Kolong Beli Kayu </h1>
+	<h1 align="center"> Pulang Pulang Ban Kempes </h1>
+	<div align="center">
+		<div class="button-wrapper">
+			<a class="button cta-button large-text" href="#0" onclick="playMusic()">Cakep</a>
+		</div>
+		<audio id="myAudio" controls>
+			<source src="danzzmp4-20240821-00013.ogg" type="audio/ogg">
+			<source src="danzzmp4-20240821-00013.mp3" type="audio/mpeg">
+		</audio>
+		<h1 align="center" id="text1" style="opacity: 0;">As long as I'm with you</h1>
+		<h1 align="center" id="text2" style="opacity: 0;">I've got a smile on my face</h1>
+        <img src="_20240822_085221.JPG">
+	</div>
+	<script>
+		function playMusic() {
+			var audio = document.getElementById("myAudio");
+			audio.play();
+			document.getElementById("text1").style.opacity = 1;
+			document.getElementById("text1").classList.add("fade-in-slow");
+			setTimeout(function() {
+				document.getElementById("text1").classList.remove("fade-in-slow");
+				document.getElementById("text1").classList.add("fade-out-slow");
+				document.getElementById("text2").style.opacity = 1;
+				document.getElementById("text2").classList.add("fade-in-very-slow");
+			}, 3000);
+		}
+	</script>
+</body>
+</html>
