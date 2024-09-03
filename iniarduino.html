@@ -3,19 +3,63 @@
 </head>
 <body>
 <pre>
-
-<h1>Arduino</h1>	
-		Menurut website resmi Arduino, Arduino merupakan sebuah perangkat elektronik yang bersifat open source dan sering
-	digunakan untuk merancang dan membuat perangkat elektronik serta software yang mudah untuk digunakan. Arduino
-	ini dirancang sedemikian rupa untuk mempermudah penggunaan perangkat elektronik di berbagai bidang.	
-		Arduino ini memiliki beberapa komponen penting di dalamnya, seperti pin, mikrokontroler, dan konektor yang nanti
-	akan dibahas lebih dalam selanjutnya. Selain itu, Arduino juga sudah menggunakan bahasa pemrograman Arduino
-	Language yang sedikit mirip dengan bahasa pemrograman C++. 
-	</div>
-		Biasanya Arduino digunakan untuk mengembangkan beberapa sistem seperti pengatur suhu, sensor untuk bidang
-	agrikultur, pengendali peralatan pintar, dan masih banyak lagi.
-
-</pre>	
+<h1>Arduino</h1>
+<p>Menurut website resmi Arduino, Arduino merupakan sebuah perangkat elektronik yang bersifat open source dan sering digunakan untuk merancang dan membuat perangkat elektronik serta software yang mudah untuk digunakan. Arduino ini dirancang sedemikian rupa untuk mempermudah penggunaan perangkat elektronik di berbagai bidang. Arduino memiliki beberapa komponen penting di dalamnya, seperti pin, mikrokontroler, dan konektor yang nanti akan dibahas lebih dalam selanjutnya. Selain itu, Arduino juga sudah menggunakan bahasa pemrograman Arduino Language yang sedikit mirip dengan bahasa pemrograman C++.</p>
+<p>Biasanya Arduino digunakan untuk mengembangkan beberapa sistem seperti pengatur suhu, sensor untuk bidang agrikultur, pengendali peralatan pintar, dan masih banyak lagi.</p>
+<h2>Komponen Arduino</h2>
+<p>Seperti yang sudah disinggung sebelumnya, Arduino memiliki beberapa komponen penting di dalamnya. Berikut ini adalah penjelasan dari masing-masing komponen Arduino:</p>
+<ul>    
+<li><strong>Mikrokontroler</strong></li> 
+</ul><p>Mikrokontroler adalah <em>chip</em> yang memungkinkan kamu memprogram Arduino dan memproses output berdasarkan input yang diberikan. Singkatnya, mikrokontroler ini adalah otak dari Arduino. Ada banyak jenis <em>chip</em> yang digunakan tergantung dari jenis Arduino-nya.</p>
+<ul>
+<li><strong>Pin</strong></li>
+</ul><p>Pin digunakan untuk menghubungkan Arduino dengan berbagai komponen yang akan kamu gunakan. Dalam Arduino sendiri ada dua jenis pin, yakni pin analog dan pin digital.</p>
+<ul>
+<li><strong>Pin digital</strong></li>
+</ul>
+<p>Pin ini dapat menerima atau mengirim sinyal digital. Digital berarti sinyal yang diterima atau dikirimkan akan bernilai 1 atau 0 alias HIGH atau LOW. Kebanyakan perangkat Arduino memiliki 14 pin input-output digital.</p>
+<ul>
+<li><strong>Pin analog</strong></li>
+</ul>
+<p>Pin analog pada Arduino adalah pin yang digunakan untuk menerima input analog. Ia dapat menerima tegangan analog dari 0V sampai dengan 5V. Umumnya, setiap jenis Arduino memiliki setidaknya satu pin analog.</p>
+<p>Setiap pin pada Arduino biasanya dapat dikonfigurasikan ke dalam dua mode, yaitu input dan output. Pada mode input, pin akan diatur untuk dapat menerima sinyal input. Sama halnya pada mode output, pin akan diatur untuk mengirimkan sinyal.</p>
+<ul>
+<li><strong>Konektor</strong></li>
+</ul>
+<p>Arduino memiliki dua jenis konektor yang cukup penting, yaitu power konektor dan serial konektor.</p>
+<ul>
+<li><strong>Power konektor</strong></li>
+</ul>
+<p>Power konektor adalah konektor yang digunakan untuk menyalurkan daya untuk Arduino. Daya ini digunakan untuk menghidupkan Arduino dan juga perangkat lain yang terhubung dengannya, seperti sensor dan layar <em>monitoring</em>.</p>
+<ul>
+<li><strong>Serial konektor</strong></li>
+</ul>
+<p>Serial konektor biasanya digunakan untuk menghubungkan Arduino dengan perangkat seperti komputer atau laptop. Konektor ini menggunakan port USB standar pada Arduino. Selain itu, konektor ini juga dapat digunakan sebagai power konektor. Namun, serial konektor hanya diimplementasikan pada perangkat Arduino yang lebih baru.</p>
+<h2>Perbandingan dengan Perangkat Prototype Sejenis</h2>
+<p>Selain Arduino, ada juga perangkat prototype sejenis dengan fungsi yang serupa di luar sana, yaitu Raspberry Pi atau lebih familier disebut dengan Raspi. Raspi memiliki fungsi dan ukuran yang sama dengan Arduino. Raspi memiliki harga yang jauh lebih tinggi dibandingkan dengan Arduino. Namun, dengan harga yang berbeda jauh itu, Raspi dapat digunakan sebagai komputer pribadi. Pasalnya, Raspi dapat diinstal beberapa OS seperti Linux dan Raspberry Pi OS.</p>
+<p>Bahasa pemrograman yang digunakan juga berbeda. Arduino menggunakan bahasa pemrograman C++ yang disederhanakan, sementara Raspi menggunakan bahasa pemrograman Python (bisa juga menggunakan bahasa pemrograman lain).</p>
+<h2>Kelebihan dan Kekurangan Arduino</h2>
+<p>Jika kita membahas perangkat mikrokontroler, Arduino memiliki daya tarik tersendiri bagi para penggunanya. Pasalnya, ia memiliki beberapa kelebihan yang membuatnya semakin bersaing dengan mikrokontroler lainnya. Berikut ini adalah kelebihan dan kekurangannya:</p>
+<h3>Kelebihan</h3>
+<ul>    
+<li>Modul Arduino yang tersedia sudah siap digunakan (shield) seperti modul GPS, LAN, dan SD card reader.</li>
+<li>Harga yang relatif terjangkau.</li>    
+<li>Mudah digunakan oleh pemula.</li>    
+<li>Ada banyak library yang dapat digunakan untuk memudahkan kamu dalam bereksperimen.</li> 
+<li>Memiliki port USB yang dapat digunakan untuk transfer data dan untuk mengalirkan sumber daya.</li>    
+<li>Memiliki Arduino IDE yang digunakan untuk menulis dan meng-upload program ke mikrokontroler.</li>    
+<li>Konsumsi daya yang rendah.</li>
+</ul>
+<h3>Kekurangan</h3>
+<ul>    
+<li>Tidak bisa diinstal OS sehingga tidak dapat digunakan sebagai komputer pribadi.</li>    
+<li>Jika kamu ingin mengubah atau memodifikasi program lama, kamu harus memodifikasi seluruh program.</li>    
+<li>Beberapa tipe Arduino tidak menyediakan modul <em>wired</em> atau <em>wireless</em> secara built-in.</li>
+<li>Memiliki kapasitas memori yang kecil.</li>    
+<li>Ruang penyimpanan terpotong karena digunakan untuk <em>bootloader</em>.</li>    
+<li>Memiliki <em>clock speed</em> yang rendah.</li>
+</ul>
+</pre> 	
 		
 <style>
 body {
