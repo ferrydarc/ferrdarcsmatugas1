@@ -1,0 +1,75 @@
+<html>
+<head>
+</head>
+<body>
+<pre>
+
+<h1>Arduino</h1>	
+		Menurut website resmi Arduino, Arduino merupakan sebuah perangkat elektronik yang bersifat open source dan sering
+	digunakan untuk merancang dan membuat perangkat elektronik serta software yang mudah untuk digunakan. Arduino
+	ini dirancang sedemikian rupa untuk mempermudah penggunaan perangkat elektronik di berbagai bidang.	
+		Arduino ini memiliki beberapa komponen penting di dalamnya, seperti pin, mikrokontroler, dan konektor yang nanti
+	akan dibahas lebih dalam selanjutnya. Selain itu, Arduino juga sudah menggunakan bahasa pemrograman Arduino
+	Language yang sedikit mirip dengan bahasa pemrograman C++. 
+	</div>
+		Biasanya Arduino digunakan untuk mengembangkan beberapa sistem seperti pengatur suhu, sensor untuk bidang
+	agrikultur, pengendali peralatan pintar, dan masih banyak lagi.
+
+</pre>	
+		
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+	<p align="center"><a href="index.html">Back</a>
